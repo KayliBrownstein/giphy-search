@@ -19816,7 +19816,7 @@
 	      var _this2 = this;
 
 	      event.preventDefault();
-	      fetch('http://api.giphy.com/v1/gifs/search?q=' + this.state.term + '&api_key=dc6zaTOxFJmzC').then(function (response) {
+	      fetch('http://api.giphy.com/v1/gifs/search?q=' + this.state.term + '&limit=24&api_key=dc6zaTOxFJmzC').then(function (response) {
 	        if (response.ok) {
 	          return response;
 	        } else {
@@ -19838,7 +19838,7 @@
 	        { className: 'app-components' },
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'searchbar-container' },
+	          { className: 'searchbarContainer row' },
 	          _react2.default.createElement(_SearchBar2.default, {
 	            onChange: this.handleChange,
 	            value: this.state.term,
@@ -19847,7 +19847,7 @@
 	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'display-container' },
+	          { className: 'displayContainer' },
 	          _react2.default.createElement(_DisplayContainer2.default, {
 	            attributes: this.state.attributes
 	          })
@@ -19895,9 +19895,10 @@
 	    { className: 'searchResults' },
 	    _react2.default.createElement(
 	      'h1',
-	      null,
+	      { className: 'heading' },
 	      'Search Results'
 	    ),
+	    _react2.default.createElement('div', { id: 'colorStrip' }),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'row' },
@@ -19938,7 +19939,7 @@
 /* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -19952,19 +19953,27 @@
 
 	var SearchBar = function SearchBar(props) {
 	  return _react2.default.createElement(
-	    'div',
-	    { className: 'form' },
+	    "div",
+	    null,
 	    _react2.default.createElement(
-	      'form',
+	      "form",
 	      { onSubmit: props.onSubmit },
-	      _react2.default.createElement('input', {
-	        type: 'text',
-	        placeholder: 'Search Term',
-	        onChange: props.onChange,
-	        value: props.term }),
-	      _react2.default.createElement('input', {
-	        type: 'submit',
-	        value: 'Submit' })
+	      _react2.default.createElement(
+	        "div",
+	        { className: "searchTerm" },
+	        _react2.default.createElement("input", { className: "input",
+	          type: "text",
+	          placeholder: "Search Term",
+	          onChange: props.onChange,
+	          value: props.term })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "small-12 medium-6 large-4 large-centered columns" },
+	        _react2.default.createElement("input", { className: "button",
+	          type: "submit",
+	          value: "Submit" })
+	      )
 	    )
 	  );
 	};

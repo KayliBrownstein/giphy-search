@@ -19,7 +19,7 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch(`http://api.giphy.com/v1/gifs/search?q=${this.state.term}&api_key=dc6zaTOxFJmzC`)
+    fetch(`http://api.giphy.com/v1/gifs/search?q=${this.state.term}&limit=24&api_key=dc6zaTOxFJmzC`)
     .then(response => {
       if (response.ok) {
         return response;
@@ -38,14 +38,14 @@ class App extends Component {
   render(){
     return(
       <div className='app-components'>
-        <div className='searchbar-container'>
+        <div className='searchbarContainer row'>
           <SearchBar
             onChange={this.handleChange}
             value={this.state.term}
             onSubmit={this.handleSubmit}
           />
         </div>
-        <div className='display-container'>
+        <div className='displayContainer'>
           <DisplayContainer
             attributes={this.state.attributes}
           />
