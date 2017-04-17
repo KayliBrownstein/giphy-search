@@ -19897,8 +19897,9 @@
 	    _react2.default.createElement(
 	      'h2',
 	      { className: 'heading' },
-	      'Search Results'
+	      'GIF Search'
 	    ),
+	    _react2.default.createElement('div', { id: 'colorStrip' }),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'row' },
@@ -19960,8 +19961,8 @@
 	      { onSubmit: props.onSubmit },
 	      _react2.default.createElement(
 	        "div",
-	        { className: "small-12 medium-6 large-4 columns" },
-	        _react2.default.createElement("input", { className: "input",
+	        { className: "small-12 medium-6 large-6 columns" },
+	        _react2.default.createElement("input", { className: "input custom",
 	          type: "text",
 	          placeholder: "Search Term",
 	          onChange: props.onChange,
@@ -19969,8 +19970,8 @@
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { className: "small-12 medium-6 large-4 columns" },
-	        _react2.default.createElement("input", { className: "button",
+	        { className: "small-12 medium-6 large-6 columns" },
+	        _react2.default.createElement("input", { className: "button custom",
 	          type: "submit",
 	          value: "Submit" })
 	      )
