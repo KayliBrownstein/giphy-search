@@ -13,7 +13,7 @@ const DisplayContainer = (props) => {
   })
 
   return(
-    <div className='search-results'>
+    <div className='searchResults'>
       <h1>Search Results</h1>
       <div className="row">
         {attributes}

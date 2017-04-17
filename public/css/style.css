@@ -1,0 +1,23 @@
+.searchResults img {
+  height: 300px;
+  width: 365px;
+  display: flex;
+  padding: 10px;
+  border: solid black 1px;
+  margin: 10px;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+.form {
+  color: red;
+  background-color: red;
+}
+
+body {
+  color: red;
+}

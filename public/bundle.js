@@ -19892,7 +19892,7 @@
 
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'search-results' },
+	    { className: 'searchResults' },
 	    _react2.default.createElement(
 	      'h1',
 	      null,
@@ -19927,7 +19927,7 @@
 	var DisplayTile = function DisplayTile(props) {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "large-3 columns panel" },
+	    { className: "small-12 medium-6 large-4 columns" },
 	    _react2.default.createElement("img", { src: props.url })
 	  );
 	};
