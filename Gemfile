@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
+ruby "2.2.5"
+
 gem 'sinatra'
 gem 'heroku'
 gem 'sinatra-activerecord'
-gem 'thin'
 
 group :development, :test do
   gem 'pry'
