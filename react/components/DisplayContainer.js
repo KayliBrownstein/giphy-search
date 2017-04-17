@@ -14,8 +14,7 @@ const DisplayContainer = (props) => {
 
   return(
     <div className='searchResults'>
-      <h1 className="heading">Search Results</h1>
-      <div id='colorStrip' />
+      <h2 className="heading">Search Results</h2>
       <div className="row">
         {attributes}
       </div>

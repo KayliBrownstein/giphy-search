@@ -19845,6 +19845,7 @@
 	            onSubmit: this.handleSubmit
 	          })
 	        ),
+	        _react2.default.createElement('div', { id: 'colorStrip' }),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'displayContainer' },
@@ -19894,11 +19895,10 @@
 	    'div',
 	    { className: 'searchResults' },
 	    _react2.default.createElement(
-	      'h1',
+	      'h2',
 	      { className: 'heading' },
 	      'Search Results'
 	    ),
-	    _react2.default.createElement('div', { id: 'colorStrip' }),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'row' },
@@ -19960,7 +19960,7 @@
 	      { onSubmit: props.onSubmit },
 	      _react2.default.createElement(
 	        "div",
-	        { className: "searchTerm" },
+	        { className: "small-12 medium-6 large-4 columns" },
 	        _react2.default.createElement("input", { className: "input",
 	          type: "text",
 	          placeholder: "Search Term",
@@ -19969,7 +19969,7 @@
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { className: "small-12 medium-6 large-4 large-centered columns" },
+	        { className: "small-12 medium-6 large-4 columns" },
 	        _react2.default.createElement("input", { className: "button",
 	          type: "submit",
 	          value: "Submit" })

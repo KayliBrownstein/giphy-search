@@ -45,6 +45,8 @@ class App extends Component {
             onSubmit={this.handleSubmit}
           />
         </div>
+        <div id='colorStrip' />
+
         <div className='displayContainer'>
           <DisplayContainer
             attributes={this.state.attributes}
