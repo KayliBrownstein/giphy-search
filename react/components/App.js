@@ -7,7 +7,7 @@ class App extends Component {
     super(props)
     this.state = {
       attributes: [],
-      term: '' 
+      term: ''
     };
 
   this.handleChange = this.handleChange.bind(this);
@@ -20,7 +20,7 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch(`http://api.giphy.com/v1/gifs/search?q=${this.state.term}&limit=24&api_key=dc6zaTOxFJmzC`)
+    fetch(`//api.giphy.com/v1/gifs/search?q=${this.state.term}&limit=24&api_key=dc6zaTOxFJmzC`)
     .then(response => {
       if (response.ok) {
         return response;
