@@ -63,6 +63,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.5)
+    puma (3.8.2)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -113,6 +114,7 @@ DEPENDENCIES
   launchy
   pg
   pry
+  puma
   rspec
   sinatra
   sinatra-activerecord

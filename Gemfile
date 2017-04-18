@@ -6,6 +6,7 @@ gem 'sinatra'
 gem 'heroku'
 gem 'sinatra-activerecord'
 gem 'pg'
+gem "puma"
 
 group :development, :test do
   gem 'pry'
