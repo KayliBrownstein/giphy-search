@@ -20,7 +20,7 @@ class App extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch(`//api.giphy.com/v1/gifs/search?q=${this.state.term}&limit=24&api_key=dc6zaTOxFJmzC`)
+    fetch(`https://api.giphy.com/v1/gifs/search?q=${this.state.term}&limit=24&api_key=dc6zaTOxFJmzC`)
     .then(response => {
       if (response.ok) {
         return response;
