@@ -7,7 +7,7 @@ class App extends Component {
     super(props)
     this.state = {
       attributes: [],
-      term: ''
+      term: '' 
     };
 
   this.handleChange = this.handleChange.bind(this);
