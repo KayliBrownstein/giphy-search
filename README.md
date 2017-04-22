@@ -7,4 +7,6 @@ You'll need to run the following commands to start the app.
 `bundle install`
 
 Then in order to get the application up and running you have to open up two
-tabs and run `ruby server.rb` in one and `npm start` in the other.
+tabs and run `ruby server.rb` in one and `npm start` in the other. Open up `localhost:4567` in your browser.
+
+The app is also available on Heroku: http://gif-search-app.herokuapp.com/.
